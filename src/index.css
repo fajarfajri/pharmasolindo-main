@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/rubik/index.css"; 
+@import "@fontsource/rubik/500.css"; 
+@import "@fontsource/rubik/700.css";
+
+.circle {
+  background-color: white;
+}
+
+.line {
+  border-left: 4px solid #F33D0F;
+  width: 0;
+  height: calc(100% - 3rem - 2px);
+}
+
+.history-item:first-child .line-before {
+  border-left: 0;
+}
+.history-item:last-child .line-after {
+  border-left: 0;
+}
